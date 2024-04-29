@@ -1,0 +1,166 @@
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/cam.css') }}">
+    <link rel="stylesheet" href="../static/css/cam.css">
+<body>
+
+    <div class="top_nav">
+        <h1 style="color: white;">VMS</h1>
+    </div>
+
+    <div class="left_nav">
+        <div class="sect">
+            
+            <div class="left_nav_item">
+                <p>Preferences</p>
+            </div>
+
+            <div class="input_box">
+            <p>Layout Columns</p>
+            <select name="layout" id="layout" style="width: 100px;">
+                <option value="1">1</option>
+                <option value="2">2</option>
+            </select>
+            </div>
+
+            <div class="input_box">
+            <p>Fit Frames Vertically</p>
+            <select name="fitframes" id="fitframes" style="width: 100px;">
+                <option value="1">1</option>
+                <option value="2">2</option>
+            </select>
+            </div>
+            
+            <div class="input_box">
+                <p>Layout rows</p>
+                <select name="layoutrows" id="layoutrows" style="width: 100px;">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                </select>
+            </div>
+
+        </div>
+        
+        <div class="sect">
+            
+            <div class="left_nav_item">
+                <p>General Settings</p>
+            </div>
+
+            <div class="input_box">
+            <p>Time Zone</p>
+            <select name="timezone" id="timezone" style="width: 100px;">
+                <option value="1">1</option>
+                <option value="2">2</option>
+            </select>
+            </div>
+
+            <div class="input_box">
+            <p>Host Name</p>
+            <input type="text" name="hostname" id="hostname" style="width: 100px;">
+            </div>
+            
+        </div>
+        
+        <div class="sect">
+            
+            <div class="left_nav_item">
+                <p>Network</p>
+            </div>
+
+            <div class="input_box">
+            <p>Wireless Network</p>
+            <select name="wifi" id="wifi" style="width: 100px;">
+                <option value="1">1</option>
+                <option value="2">2</option>
+            </select>
+            </div>
+
+            <div class="input_box">
+            <p>IP Configuration</p>
+            <input type="text" name="ipconfig" id="ipconfig" style="width: 100px;">
+            </div>
+
+            <div class="input_box">
+                <p>IP Adress</p>
+                <input type="text" name="ipaddr" id="ipaddr" style="width: 100px;">
+            </div>
+
+            <div class="input_box">
+                <p>Network Mask</p>
+                <input type="text" name="networkmask" id="networkmask" style="width: 100px;">
+            </div>
+
+            <div class="input_box">
+                <p>Default Gateway</p>
+                <input type="text" name="gateway" id="gateway" style="width: 100px;">
+            </div>
+
+            <div class="input_box">
+                <p>DNS Server</p>
+                <input type="text" name="dns" id="dns" style="width: 100px;">
+            </div>
+            
+        </div>
+       
+        <div class="sect">
+            
+            <div class="left_nav_item">
+                <p>Video Device</p>
+            </div>
+
+            <div class="input_box">
+            <p>Camera Name</p>
+            <input type="text" name="camname" id="camname" style="width: 100px;">
+            </div>
+
+            <div class="input_box">
+            <p>Camera ID</p>
+            <input type="text" name="camid" id="camid" style="width: 100px;">
+            </div>
+
+            <div class="input_box">
+                <p>Camera Device</p>
+                <input type="text" name="camdevice" id="camdevice" style="width: 100px;">
+            </div>
+
+            <div class="input_box">
+                <p>Camera Type</p>
+                <input type="text" name="camtype" id="camtype" style="width: 100px;">
+            </div>
+            
+        </div>
+       
+        <div class="sect">
+            
+            <div class="left_nav_item">
+                <p>File Storage</p>
+            </div>
+
+            <div class="input_box">
+            <p>Storage Device</p>
+            <input type="text" name="storage" id="storage" style="width: 100px;">
+            </div>
+
+            <div class="input_box">
+            <p>Root directory</p>
+            <input type="text" name="rootdir" id="rootdir" style="width: 100px;">
+            </div>
+
+        </div>
+
+    </div>
+    <div class="right_itmes">
+
+        <div class="camera">
+            <div class="top">
+                <img src="{{  url_for('video_feed1') }}">
+                <img src="{{ url_for('video_feed1') }}">
+            </div>
+            <div class="top">
+                <img src="{{ url_for('video_feed2') }}">
+                <img src="{{ url_for('video_feed2') }}">
+            </div>
+            
+    </div>
+</body>
+</html>
